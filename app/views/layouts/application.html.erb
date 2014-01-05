@@ -19,12 +19,22 @@
     <span class="icon-bar"></span>
     </a>
      
-    <!-- Be sure to leave the brand out there if you want it shown -->
-    <a class="brand" href="#">Firehose app</a>
+    <!-- Be sure to leave the brand out there if you want it shown when you collapse down to mobile width -->
+    <%= link_to "Firehose App", root_path, :class => 'brand' %>
      
-    <!-- Everything you want hidden at 940px or less, place within here -->
+    <!-- Everything you want hidden at 940px or less, place within here when responsive collapses -->
     <div class="nav-collapse collapse">
     <!-- .nav, .navbar-search, .navbar-form, etc -->
+    
+
+        <ul class="nav">
+
+             <li>    <%= link_to "Add a Picture",new_pic_path %>
+            </li>
+             <li>    <%= link_to "Look at Pictures", pics_path %>
+            </li>
+
+        </ul>
     </div>
      
     </div>
